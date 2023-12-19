@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seudo clase</title>
+    <style>
+        .menu{
+            background-color: gray;
+        }
+        .menu-nav{
+            list-style: none;
+        }
+        .menu-nav__item{
+            display: inline-block;            
+        }
+        .menu-nav__item a{
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Seudo-clases, define el estado de un elemento */
+        .menu-nav__item a:hover{
+            color: blue;
+        }
+        .menu-nav__item a:active{
+            color: red;
+        }
+
+        /* Seudo-elementos, agregar un contenido */
+        .menu-nav__item a::after{
+            content: " - ";
+        }
+    </style>
+</head>
+<body>
+    
+    <header>
+        <nav class="menu">
+            <ul class="menu-nav">
+                <li class="menu-nav__item"><a href="">Inico</a></li>
+                <li class="menu-nav__item"><a href="">Job</a></li>
+                <li class="menu-nav__item"><a href="">Blog</a></li>
+                <li class="menu-nav__item"><a href="">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

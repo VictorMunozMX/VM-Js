@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posiciones</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .caja{
+            background-color: blue;
+            width: 200px;
+            height: 200px;
+            margin: 20px;       
+            /*float: left;     */
+        }
+        .position{            
+            background-color: red;
+            
+            /* Position, siempre es static, cambiar a relative para mover y el resto respeta el cudro*/
+            /*position: relative;*/
+
+            /* Position, siempre es static, cambiar a absolute para mover y el resto omite el cuadro */            
+            /*position: absolute;*/
+
+            /* Position, siempre es fixed, siempre esta fijo, nunca se mueve         
+            position: fixed;
+            left: 300px;
+            top: 300;*/
+
+            /*combinacion con clase cafa, opc float
+            position: relative;*/
+            position: absolute;
+            bottom: 0%;
+            right: 0%;
+        }
+        .caja-padre{
+            margin: 20px;
+            background: orange;
+            width: 500px;
+            height: 500px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="caja"></div>
+    <div class="caja-padre">
+        <div class="caja position"></div>
+    </div>    
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+    <div class="caja"></div>
+
+
+</body>
+</html>

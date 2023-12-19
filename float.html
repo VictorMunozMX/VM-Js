@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso float</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial;
+        }
+        .main{
+            background: greenyellow;
+            width: 90%;
+            margin: auto;
+            padding: 10px; 
+            overflow: hidden;             
+        }
+        .caja{
+            width: 500px;
+            height: 200px;
+            margin: 20px;                      
+        }
+        .img{
+            float: left;
+            width: auto;
+        }
+        .text{
+            float: left;
+        }
+
+        /* estilos para articulos*/
+        .articulo{
+            background: gray;
+            width: 500px;
+            margin: auto;  
+            padding: 10px;          
+        }
+
+        .articulo h2{
+            padding: 10px;
+            text-align: center;
+        }
+        
+        .articulo img{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    
+    <main class="main">
+        <div class="caja img">
+            <img src="img/uno.jpg" alt="" height="200">
+        </div>
+        <div class="caja text">
+            <h2>Encabezado</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at placerat magna. Fusce id consectetur
+                justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                Nunc quis ante et odio consectetur convallis nec vitae quam. Sed in lectus at elit semper laoreet. 
+           </p>
+        </div>
+    </main>
+
+    <article class="articulo">
+        <h2>Encabezado de articulo</h2>
+        <img src="img/dos.jpg" alt="" height="200">        
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at placerat magna. Fusce id consectetur
+            justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Nunc quis ante et odio consectetur convallis nec vitae quam. Sed in lectus at elit semper laoreet. 
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at placerat magna. Fusce id consectetur
+            justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Nunc quis ante et odio consectetur convallis nec vitae quam. Sed in lectus at elit semper laoreet. 
+        </p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at placerat magna. Fusce id consectetur
+            justo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+            Nunc quis ante et odio consectetur convallis nec vitae quam. Sed in lectus at elit semper laoreet. 
+        </p>
+    </article>
+
+</body>
+</html>
